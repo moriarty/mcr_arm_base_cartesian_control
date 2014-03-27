@@ -109,7 +109,8 @@ void Arm_Cartesian_Control::process(
 
 
 	// limit joint velocitied
-	if (jntVel.data.norm() > 0.01) {
+	/*
+	if (jntVel.data.norm() > max_joint_vel*5 ) {
 		double max_velocity = jntVel.data.cwiseAbs().maxCoeff();
 		if (max_velocity > max_joint_vel) {
 			jntVel.data /= max_velocity;
@@ -118,7 +119,7 @@ void Arm_Cartesian_Control::process(
 	} else {
 		jntVel.data.Zero(arm_chain->getNrOfJoints());
 	}
-
+	**/
 
 	//check for joint limits
 	checkLimits(dt, joint_positions, jntVel);
