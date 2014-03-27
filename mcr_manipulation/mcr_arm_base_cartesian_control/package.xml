@@ -1,11 +1,12 @@
 <package>
-<name>mcr_arm_cartesian_control</name>
+<name>mcr_arm_base_cartesian_control</name>
 <version>0.1.0</version>
   <description>
-     arm Cartesian control
+     arm and base Cartesian control
   </description>
 
   <author email="matthias.fueller@h-brs.de">Matthias Füller</author>
+  <author email="alexander@dal.ca">Alex Moriarty</author>
   <maintainer email="matthias.fueller@h-brs.de">Matthias Füller</maintainer>
   <maintainer email="sven.schneider@h-brs.de">Sven Schneider</maintainer>
   <maintainer email="frederik.hegger@h-brs.de">Frederik Hegger</maintainer>
